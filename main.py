@@ -1,10 +1,12 @@
 import asyncio
 import templates.bot
-import logging
+import logging, sys
 
 async def main():    
     
-    logging.basicConfig(level=logging.INFO)
+    if "--log-file" in sys.argv:
+        logging.basicConfig(filename="main.log", encoding="utf-8", level=logging.INFO)
+    else: logging.basicConfig(level=logging.INFO)
 
     await templates.bot.run()
 
