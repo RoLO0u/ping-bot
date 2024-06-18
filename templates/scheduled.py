@@ -11,7 +11,7 @@ async def build_scheduler(bot: Bot):
         print(int(getenv("CHAT_ID")))
         await bot.send_message(
             chat_id=int(getenv("CHAT_ID")),
-            text=f"<a href=\"tg://user?id={getenv("ID")}\">Шо ти?))</a>",
+            text=f"<a href=\"tg://user?id={getenv('ID')}\">Шо ти?))</a>",
             parse_mode="HTML")
 
     scheduler = AsyncIOScheduler()
