@@ -1,0 +1,20 @@
+# useless
+
+**/__pycache__/
+venv/*
+.vscode/
+
+# for testing
+
+secrets.txt
+env.sh
+TODO.md
+
+# Docker secrets
+
+db/
+.env
+
+# docker
+
+.compose.yaml.swp
